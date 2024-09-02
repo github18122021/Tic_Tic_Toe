@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+# Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A classic Tic Tac Toe game implemented with React, TypeScript, and Tailwind CSS. Play against a friend on the same device in this simple and intuitive game.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Technologies
+- Installation
+- Usage
+- Features
+- Game Rules
+- Contributing
+- Demo
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: A JavaScript library for building dynamic and responsive user interfaces.
+- TypeScript: A superset of JavaScript that adds static typing, enhancing code quality and developer productivity.
+- Tailwind CSS: A utility-first CSS framework that enables rapid UI development with pre-built styles.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Clone the repository:
+
+```bash
+git clone https://github.com/github18122021/tic-tac-toe.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Navigate to the project directory:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd tic-tac-toe
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Usage
+
+Start the development server:
+
+```bash
+npm start
+```
+
+Open your browser:
+
+Navigate to http://localhost:5173 to start playing the game.
+
+Gameplay:
+
+Click on any square on the game board to place your mark (X or O). Alternate turns between Player 1 and Player 2 until there's a winner or a draw.
+
+## Features
+
+- Two-Player Game: Play against a friend locally.
+- Responsive Game Board: Enjoy an interactive and responsive UI that works on different devices.
+- Win Detection: Automatically detects and announces the winner.
+- Draw Detection: Declares a draw if the board is filled with no winner.
+- Reset Game: Reset the game board to start a new round at any time.
+
+## Game Rules
+
+- Starting the Game: Player 1 always starts with the X mark.
+- Taking Turns: Players alternate turns, with Player 1 marking X and Player 2 marking O.
+- Winning the Game: The first player to align three marks in a horizontal, vertical, or diagonal line wins.
+- Ending in a Draw: If all squares are filled without any player aligning three marks, the game ends in a draw.
+- Resetting the Game: Use the "Reset Game" button to clear the board and start a new match.
+
+## Contributing
+
+Contributions are welcome! If you encounter bugs, have suggestions for improvements, or want to add new features, please open an issue or submit a pull request.
+
+## Demo
+
+![Tic Tac Toe Demo Vercel](https://tic-tac-7iqhp5ok6-vrajs-projects-d270afb9.vercel.app/)
